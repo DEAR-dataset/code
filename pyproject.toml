@@ -1,0 +1,21 @@
+[project]
+name = "dear"
+description = "DEAR PyTorch dataset and tasks"
+version = "1.0.0"
+authors = [
+    { name = "Fabian Gröger", email = "fabian.gröger@hslu.ch" },
+    { name = "Pascal Baumann", email = "pascal.baumann@hslu.ch" },
+    { name = "Ludovic Amruthalingam", email = "ludovic.amruthalingam@hslu.ch"},
+    { name = "Laurent Simon"},
+    { name = "Ruksana Giurda"},
+    { name = "Simone Lionetti", email = "simone.lionetti@hslu.ch" },
+]
+
+[tool.black]
+include = '\.pyi?$'
+
+[tool.pytest.ini_options]
+# Set true to see logger ouput in test command line window
+log_cli = 1
+log_cli_level = "DEBUG"
+log_cli_format = "%(time)s :: %(name)s :: %(message)s"
