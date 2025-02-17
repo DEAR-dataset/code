@@ -1,14 +1,15 @@
-# DEAR
+# DEAR Dataset Code
 
-This the code for  a [`torch.data.DataSet`](https://pytorch.org/docs/stable/data.html#torch.utils.data.Dataset) class and meant to be used in
-conjunction with the data for the DEAR paper which can  be found on Zenodo.
+This is a [`torch.utils.data.Dataset`](https://pytorch.org/docs/stable/data.html#torch.utils.data.Dataset) class
+for the Deep Evaluation of Acoustic Representations (DEAR) dataset.
+The corresponding [paper](https://arxiv.org/abs/2502.06664) is on the arXiv and the [data](https://zenodo.org/records/14646595) is on Zenodo.
 
-# Usage
+## Usage
 
-Copy the dear directory to your source repository, you are then be able to spawn a
-related  evaluation task object by using the desired class.
+Copy the dear directory to the source repository,
+then spawn a `Dataset` for an evaluation task using the desired class.
 
-## Environment
+### Environment
 
 ```python
 environment_eval_dataset = EnvironmentDEARDataset(
@@ -18,7 +19,7 @@ environment_eval_dataset = EnvironmentDEARDataset(
 )
 ```
 
-## Indoor or Outdoor
+### Indoor or Outdoor
 
 ```python
 indoor_or_outdoor_eval_dataset = IndoorOutdoorDEARDataset(
@@ -27,7 +28,8 @@ indoor_or_outdoor_eval_dataset = IndoorOutdoorDEARDataset(
     target_variable_type=TargetVariableType.DISCRETE,
 )
 ```
-## Stationary or Transient Noise
+
+### Stationary or Transient Noise
 
 ```python
 noise_eval_dataset = StationaryTransientNoiseDEARDataset(
@@ -37,7 +39,7 @@ noise_eval_dataset = StationaryTransientNoiseDEARDataset(
 )
 ```
 
-## Signal to Noise Ration (SNR)
+### Signal to Noise Ration (SNR)
 
 ```python
 snr_eval_dataset = SNRDEARDataset(
@@ -47,7 +49,7 @@ snr_eval_dataset = SNRDEARDataset(
 )
 ```
 
-## Speech Present
+### Speech Present
 
 ```python
 speech_present_eval_dataset = SpeechDEARDataset(
@@ -58,7 +60,7 @@ speech_present_eval_dataset = SpeechDEARDataset(
 )
 ```
 
-## Speakers Active
+### Speakers Active
 
 ```python
 speakers_active_eval_dataset = SpeechDEARDataset(
@@ -69,7 +71,7 @@ speakers_active_eval_dataset = SpeechDEARDataset(
 )
 ```
 
-## Direct-to-Reverberant Ratio (DRR)
+### Direct-to-Reverberant Ratio (DRR)
 
 ```python
 drr_eval_dataset = DRRDEARDataset(
@@ -79,7 +81,7 @@ drr_eval_dataset = DRRDEARDataset(
 )
 ```
 
-## RT60
+### RT60
 
 ```python
 rt60_eval_dataset = RT60DEARDataset(
@@ -88,7 +90,10 @@ rt60_eval_dataset = RT60DEARDataset(
     target_variable_type=TargetVariableType.CONTINUOUS,
 )
 ```
-You can then use the normal PyTorch pattern to run your evaluation
+
+## Example
+
+Use the standard PyTorch pattern to run the evaluation, e.g.
 
 ```python
 model = Wav2Vec2Model()
