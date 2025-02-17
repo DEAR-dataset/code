@@ -1,6 +1,6 @@
 # DEAR
 
-This the code for  a [`torch.data.DataSet`](https://pytorch.org/docs/stable/data.html#torch.utils.data.Dataset) class and meant to be used in
+This the code for  a [`torch.data.Dataset`](https://pytorch.org/docs/stable/data.html#torch.utils.data.Dataset) class and meant to be used in
 conjunction with the data for the DEAR paper which can  be found on Zenodo.
 
 # Usage
