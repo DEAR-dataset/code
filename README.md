@@ -2,7 +2,7 @@
 
 This is a [`torch.utils.data.Dataset`](https://pytorch.org/docs/stable/data.html#torch.utils.data.Dataset) class
 for the Deep Evaluation of Acoustic Representations (DEAR) dataset.
-The corresponding [paper](https://arxiv.org/abs/2502.06664) is on the arXiv and the [data](https://zenodo.org/records/14646595) is on Zenodo.
+The corresponding [paper](https://arxiv.org/abs/2502.06664) is on the arXiv and the [data](https://doi.org/10.5281/zenodo.14646594) is on Zenodo.
 
 ## Usage
 
