@@ -1,8 +1,9 @@
 # DEAR Dataset Code
+[![HF Dataset](https://img.shields.io/badge/%F0%9F%A4%97%20Dataset-HSLU--AAI%2FDEAR-yellow?logo=huggingface)](https://huggingface.co/datasets/HSLU-AAI/DEAR)
 
 This is a [`torch.utils.data.Dataset`](https://pytorch.org/docs/stable/data.html#torch.utils.data.Dataset) class
 for the Deep Evaluation of Acoustic Representations (DEAR) dataset.
-The corresponding [paper](https://arxiv.org/abs/2502.06664) is on the arXiv and the [data](https://doi.org/10.5281/zenodo.14646594) is on Zenodo.
+The corresponding [paper](https://arxiv.org/abs/2502.06664) is on arXiv, and the [data](https://doi.org/10.5281/zenodo.14646594) is on Zenodo or [HuggingFace](https://huggingface.co/datasets/HSLU-AAI/DEAR).
 
 ## Usage
 
